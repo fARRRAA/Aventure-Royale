@@ -1,0 +1,103 @@
+footer {
+    margin-top: 200px;   
+    padding: 50px;
+    background-color: #222b3b;
+}
+.footer_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.column_title {
+    font-weight: 500;
+    font-size: 16px;
+
+}
+.footer_line {
+    display: flex;
+    justify-content: space-between;
+
+}
+.column_nav {
+
+    color:rgba(0, 0, 0, 0.65);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+}
+.column_nav-item {
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+}
+.footer_line >a>.topheader_logo {
+    font-size: 34px;
+}
+.footer_advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer_advantage {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.footer_advantage {
+    font-size: 14px;
+    max-width: 280px;
+    font-weight: 400;
+    color: #8392ac;;
+}
+.footer_toagency {
+    display: flex;
+    flex-direction: column;
+}
+.footer_toagency-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.footer_toagency-subtitle {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 250px;
+    color: #8392ac;
+}
+.toagency_reestr {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: hsla(0, 0%, 100%, .1);
+}
+.footer_social {
+    margin-top: 20px;
+
+}
+.footer_social>img {
+    width: 350px;
+
+}
+.footer_line:nth-child(3){
+    justify-content: start;
+    gap: 30px;
+}
+.soglashenie,.politika {
+    text-decoration: underline;
+    font-size: 14px;
+    color: #8392ac;
+}
+.copyright {
+    font-size: 14px;
+    color: #8392ac;
+}

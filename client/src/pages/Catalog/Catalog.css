@@ -1,0 +1,59 @@
+.catalog {
+    margin-top: 100px;
+
+}
+.catalog_title {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+.catalog_wrapper {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 80px;
+}
+
+.catalog_search {
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.catalog_search > form > input::placeholder {
+    font-size: 18px;
+    color: #c0c0c0;
+}
+.catalog_search > form>input {
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+}
+.catalog_search > form>input  {
+    font-size: 16px;
+    color: #525252;
+    padding: 6px 10px;
+}
+select {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    border: 1px solid #c0c0c0;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: #acacac;
+}
+.search_block,.sort_block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

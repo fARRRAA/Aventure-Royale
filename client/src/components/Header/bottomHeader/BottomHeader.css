@@ -1,0 +1,61 @@
+.bottomheader {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    color: #4f4f4f;
+}
+
+.bottomheader_nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.bottomheader_menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 50px;
+    padding: 8px;
+    border: 1px solid rgb(166, 166, 166);
+    font-size: 14px;
+    transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    cursor: pointer;
+}
+
+.bottomheader_menu:hover {
+    color: white;
+    background-color: #4f4f4f;
+    border: 1px solid rgb(255, 255, 255);
+    transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.bottomheader_menu:hover>svg>path {
+    stroke: white;
+}
+
+.bottomheader_nav-item {
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.bottomheader_nav-item::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    /* Расположение линии снизу от текста */
+    left: 0;
+    width: 0%;
+    height: 2px;
+    /* Толщина линии */
+    background-color: #7e7e7e;
+    /* Цвет линии */
+    transition: width 0.4s ease;
+    /* Анимация увеличения ширины линии */
+}
+
+.bottomheader_nav-item:hover::before {
+    width: 100%;
+    /* Увеличение ширины линии до 100% при наведении */
+}

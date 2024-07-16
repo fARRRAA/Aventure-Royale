@@ -1,0 +1,68 @@
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    color: #4f4f4f;     
+}
+.topheader_logo {
+    font-size: 28px;
+    color: #0093D0;
+    font-weight: 600;
+}
+.topheader_logo> span {
+    font-weight: 300;
+}
+.topheader_nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.topheader_phone,.topheader_geopos,.topheader_map,.topheader_auth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+.topheader_icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+ .topheader_geopos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+}
+.topheader_icons> svg {
+    cursor: pointer;
+    transition: .3s ease;
+}
+.topheader_icons> svg:hover {
+    transform: scale(1.2);
+} 
+.topheader_icons> a>svg {
+    cursor: pointer;
+    transition: .3s ease;
+}
+.topheader_icons>a> svg:hover {
+    transform: scale(1.2);
+} 
+.topheader_auth {
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: #0093D0;
+    text-align: center;
+    color: white;
+    transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    cursor: pointer;
+}
+.topheader_auth:hover {
+
+    background-color: #006a98;
+    color: white;
+    transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}

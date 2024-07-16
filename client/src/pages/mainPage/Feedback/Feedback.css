@@ -1,0 +1,40 @@
+.feedback {
+    margin-top: 200px;
+    display: flex;
+    gap: 15%;
+}
+
+.feedback_img>img {
+    width: 520px;
+    aspect-ratio: 16/12;
+}
+
+.feedback_info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feedback_title {
+    font-size: 28px;
+    color: #4f4f4f;
+    max-width: 430px;
+    font-weight: 500;
+}
+.feedback_title>span {
+    color: #0093D0;
+}
+.feedback_info>.register_form {
+    display: flex;
+    align-items: start;
+    margin-top: 0;
+}
+textarea {
+    resize: none; 
+}
+.email {
+    width: 310px;
+}
+.name {
+    width: 310px;
+}

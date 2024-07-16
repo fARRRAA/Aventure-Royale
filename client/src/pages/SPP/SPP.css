@@ -1,0 +1,259 @@
+.tour_page {
+    margin-top: 80px;
+    display: flex;
+
+}
+.tour {
+    display: flex;
+    flex-direction: column;
+
+}
+.tour_imgs {
+    display: flex;
+    gap: 50px;
+}
+.tour_thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    flex-wrap: wrap;
+    max-height: 550px;
+}
+.tour_thumb {
+    width: 85px;
+    height: 85px;    
+}
+.main_img {
+    height: 500px;
+    width: 900px;
+}
+.to_catalog {
+    margin-top: 30px;
+    font-weight: 18px;
+    color: rgb(152, 152, 152);
+}
+.tour_about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+    margin-top:60px;
+    max-width: 1140px;
+
+}
+.tour_about-line {
+    display: flex;
+    justify-content: space-between;
+}
+.tour_page-name {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.65);
+}
+.tour_page-price {
+    font-size: 22px;
+    font-weight: 500;
+    color: #0093D0;
+}
+.tour_page-price> span {
+    font-weight: 350;
+    color: rgba(0, 0, 0, 0.65);
+} 
+.tour_page-rating {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-left: 5px;
+}
+.tour_page-rate{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0093D0;
+}
+.tour_page-testcount {
+    display: flex;
+    gap: 4px;align-items: center;
+    cursor: pointer;
+    
+}
+
+.tour_page-btn.cart {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0093D0;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.tour_page-btn.cart>svg>path {
+    transition: .3s ease;
+
+}
+.tour_page-btn.cart:hover>svg>path {
+    transition: .3s ease;
+
+    fill: #0093D0;
+}
+.tour_page-btn.cart:hover {
+    color: #0093D0;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+    transition: .3s ease;
+
+}
+.tour_page-capt {
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+.tour_page-capt > button {
+    margin-left: 10px;
+    color: rgb(152, 152, 152);
+}
+.tour_about-line> .tour_dura>.dura_night{
+    font-size: 16px;
+}
+
+.tour_incl_excl {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+.tour_page-include,.tour_page-exclude {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tour_page-info {
+    display: flex;
+    gap: 35px;
+    align-items: start;
+    margin-top: 20px;
+}
+.tour_page-info > .tour_cities {
+
+}
+.tour_page-info > .tour_cities>.cities_title {
+    color:#0093D0;
+    font-weight: 400;
+}
+
+.tour_page-info > .tour_cities>.tour_city {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 16px;
+}
+.include_elem-text,.exclude_elem-text {
+    max-width: 800px;
+
+}
+.include_title,.exclude_title {
+    font-weight: 500;
+    font-size: 18px;
+}
+.include,.exclude {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.include_wrapper,.exclude_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tour_page-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.reviews_rating {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.rating_elem {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.rating_elem-count {
+    font-size:30px;
+    font-weight: 500;
+}
+.rating_elem-count.positive {
+    color: #3bb33b;
+}
+.rating_elem-count.neutral {
+    color: #777;
+}
+.rating_elem-count.negative {
+    color: red;
+}
+.rating_elem-count>span {
+margin-left: 4px;
+font-size: 14px;
+color:rgba(0, 0, 0, .6);
+}
+.rating_elem-text {
+    font-size: 14px;
+    color:rgba(0, 0, 0, .6);
+    margin-top: -6px;
+}
+.reviews_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: start;
+}
+.reviews_wrapper-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+.review_item {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 5px;
+
+}
+.review_author_rating {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.review_author {
+    font-size: 16px;
+    font-weight: 500;
+}
+.review_rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #0093D0;
+    font-weight: 500;
+}
+.review_rating > p {
+    margin-left: 7px;
+    font-size: 16px;
+}
+.review_body {
+    margin-top: 10px;
+    font-size: 14px;
+    max-width: 510px;
+    color: #777;
+}
+.review_date {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0093D0;
+}
