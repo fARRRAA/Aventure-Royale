@@ -9,7 +9,7 @@ import { Feedback } from './Feedback/Feedback.jsx'
 import { Reviews } from './Reviews/Reviews.jsx'
 import { Register } from '../Register/Register.jsx'
 import { Profile } from '../Profile/Profile.jsx'
-
+import { Catalog } from '../Catalog/Catalog.jsx'
 export function MainPage() {
     const [tours, setTours] = useState(null)
     let mintours = tours&& tours.slice(0,3);
@@ -46,6 +46,7 @@ export function MainPage() {
                 </div> */}
                 <Feedback/>
                 <Reviews/>
+                <Catalog/>
 
             </div>
 

@@ -134,7 +134,7 @@
 }
 .tour_page-info {
     display: flex;
-    gap: 35px;
+    gap: 80px;
     align-items: start;
     margin-top: 20px;
 }
