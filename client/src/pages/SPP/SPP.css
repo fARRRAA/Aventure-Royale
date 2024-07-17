@@ -22,10 +22,12 @@
 .tour_thumb {
     width: 85px;
     height: 85px;    
+    object-fit: cover;
 }
 .main_img {
     height: 500px;
     width: 900px;
+    object-fit: cover;
 }
 .to_catalog {
     margin-top: 30px;

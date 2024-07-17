@@ -116,7 +116,6 @@ export function Login() {
             });
             if (findedUser) {
                 if (findedUser.password == passwordInput) {
-
                     dispatch(setUser({
                         id: findedUser.id,
                         email: findedUser.email,

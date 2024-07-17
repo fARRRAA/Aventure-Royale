@@ -36,6 +36,7 @@ footer {
     font-size: 13px;
     font-weight: 600;
     color: white;
+    cursor: pointer;
 }
 .footer_line >a>.topheader_logo {
     font-size: 34px;

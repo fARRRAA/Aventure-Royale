@@ -14,10 +14,8 @@ import Typography from '@mui/joy/Typography';
 import Key from '@mui/icons-material/Key';
 import { setUser } from '../../store/slices/userSlice';
 import { useDispatch } from 'react-redux';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useAuth } from '../../hooks/useAuth';
 import { Navigate, useNavigate } from 'react-router-dom';
-
 import { getDatabase, ref, set, child, get } from "firebase/database";
 export function Register() {
     const navigate = useNavigate();

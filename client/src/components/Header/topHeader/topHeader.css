@@ -66,3 +66,103 @@
     color: white;
     transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
+.cart_icon {
+    position: relative;
+    cursor: pointer;
+}
+.count_items.hidden {
+    opacity:0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.count_items.active {
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0093D0;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 20px;
+    transition: 0.35s ease-in-out;
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+}
+.count_items {
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.cart_list {
+    transition: .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transform: translateY(0px);
+}
+.cart_list.hidden {
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0;
+    max-width: 0;
+}
+.cart_list.active {
+    opacity: 1;
+    transform: translateY(0px);
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 13px 27px -5px rgba(50, 50, 93, 0.25);
+    background: #fff;
+    position: absolute;
+    z-index: 111;
+    max-height: auto;
+    max-width: auto;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    right: 100px;
+    top: 50px;
+}
+.cart_list-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+.cart_header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.cart_wrapper {
+    padding-right:10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-height: 610px;
+    overflow: auto;
+}
+.cart_btn-pay {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #0093D0;
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.cart_btn-pay:hover {
+    transition: .3s ease;
+    outline: 1px solid #0093D0;
+    color: #0093D0;
+    background-color: white;
+}

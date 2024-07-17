@@ -1,39 +1,54 @@
-.register{
+.register {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .register_title {
     font-size: 30px;
     font-weight: 500;
     text-align: center;
 }
+
 form {
     margin-top: 20px;
-   gap: 15px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
 }
+
 input[name='fname'] {
     min-width: 280px;
 }
+
 input[name='lname'] {
     min-width: 280px;
 }
+
 input[name='email'] {
     min-width: 248px;
 }
+
 input[name='phone'] {
     width: 250px;
 }
+
 input[name='password'] {
     width: 250px;
 }
-.input_name,.input_lname,.input_email,.input_phone,.input_password {
+
+.input_name,
+.input_lname,
+.input_email,
+.input_phone,
+.input_password {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
+
 .registr_submit {
     margin-top: 5px;
     width: 313px;
@@ -45,11 +60,13 @@ input[name='password'] {
     text-align: center;
     padding: 10px;
 }
+
 .register_link {
     font-size: 16px;
     color: #636B74;
 }
-.register_link > a> span {
+
+.register_link>a>span {
     margin-left: 3px;
     color: #0093D0;
 

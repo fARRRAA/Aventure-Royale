@@ -11,9 +11,9 @@ import { SPP } from './pages/SPP/SPP.jsx'
 import { Login } from './pages/Login/Login.jsx'
 import { Register } from './pages/Register/Register.jsx'
 import { Profile } from './pages/Profile/Profile.jsx'
+import { Payment } from './pages/Payment/Payment.jsx'
 
 export function App() {
-
   return (
 
     <>
@@ -31,6 +31,7 @@ export function App() {
             <Route path='/signin' element={<Login/>}/>
             <Route path='/signup' element={<Register/>}/>
             <Route path='/user/profile' element={<Profile/>}/>
+            <Route path='/user/payment' element={<Payment/>}/>
           </Routes>
 
       </div>

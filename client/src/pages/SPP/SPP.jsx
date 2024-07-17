@@ -6,21 +6,19 @@ import { Rating } from './Rating/Rating';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { ReviewRating } from './Review/ReviewRating/Reviewrating';
 import { tours } from '../Catalog/data.js';
+import { useFavorites } from '../../hooks/useFavorites';
+import { useActions } from '../../hooks/useFavsAction';
 export function SPP() {
     const [photo, setPhoto] = useState(0)
     const { id } = useParams();
     const [bodyLength, setBodyLength] = useState(800)
-    // const [tours, setTours] = useState(null)
     const tour = tours && tours[id - 1];
-    // useEffect(() => {
-    //     async function getTours() {
-    //         const response = await fetch('http://a0993874.xsph.ru/api/tours', { 'Content-type': 'application/json; charset=utf-8' })
-    //         const data = await response.json();
-    //         const result = data.data;
-    //         setTours(result)
-    //     }
-    //     getTours();
-    // }, []);
+
+    
+    const { toggleFavorites } = useActions();
+    const { favorites } = useFavorites();
+
+
     const getBgColor = (id) => {
         const rating = tour.reviews[id].rating;
         if (rating == 5 | rating == 4) {
