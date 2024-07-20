@@ -93,11 +93,15 @@
     cursor: pointer;
     transition: .3s ease;
 }
-.tour_page-btn.cart>svg>path {
+.tour_page-btn.cart>div>svg>path {
     transition: .3s ease;
 
 }
-.tour_page-btn.cart:hover>svg>path {
+.tour_page-btn.cart>div {
+    display: flex;
+    gap: 10px;
+}
+.tour_page-btn.cart:hover>div>svg>path {
     transition: .3s ease;
 
     fill: #0093D0;
@@ -140,9 +144,7 @@
     align-items: start;
     margin-top: 20px;
 }
-.tour_page-info > .tour_cities {
 
-}
 .tour_page-info > .tour_cities>.cities_title {
     color:#0093D0;
     font-weight: 400;

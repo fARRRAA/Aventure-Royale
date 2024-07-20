@@ -1,4 +1,5 @@
-.profile,.profile_admin {
+.profile,
+.profile_admin {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +56,7 @@
     padding: 20px 20px;
     background-color: white;
     border: 1px solid #dbdada;
-    border-radius: 10px;  
+    border-radius: 10px;
     width: 75%;
 
 }
@@ -91,9 +92,6 @@
 .line_subtitle {
     color: #757575;
 }
-
-.right_line:nth-child(1) {}
-
 .right_line:nth-child(2) {
     margin-top: 15px;
     gap: 132px;
@@ -149,7 +147,6 @@
     background-color: white;
     border: 1px solid #dbdada;
     border-radius: 10px;
-    min-width:500px
 }
 
 .profile_payment-item {
@@ -165,6 +162,7 @@
     color: #0093D0;
     font-size: 18px;
 }
+
 .profile_payment-item-id {
     font-size: 18px;
 }
@@ -175,7 +173,7 @@
 }
 
 .profile_payment-item-price {
-    font-size:18px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
@@ -185,6 +183,7 @@
     margin-top: 15px;
     margin-bottom: 20px;
 }
+
 .profile_payment-item-tours {
     display: flex;
     flex-direction: column;
@@ -194,4 +193,78 @@
 .profile_admin-inner {
     display: flex;
     justify-content: space-between;
+    margin-top: 80px;
+    width: 120%;
+}
+
+.all_users,.all_payments,.all_feedback {
+    padding: 20px 20px;
+    background-color: white;
+    border: 1px solid #dbdada;
+    border-radius: 10px;
+
+}
+
+.all_users-wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-height: 700px;
+    overflow: auto; 
+    grid-gap: 10px; 
+    gap: 25px;
+    padding-right: 15px;
+}
+
+.user_item,.feedback_item {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(238, 238, 241, .3);
+    border: 1px solid #EBEDF0;
+    border-radius: 15px;
+    color: #4f4f4f;
+}
+
+.user_item-name,
+.user_item-email,
+.user_item-id,
+.user_item-role,
+.user_item-phone,
+.user_item-password {
+    font-size: 18px;
+    margin-top: 5px;
+
+}
+
+.user_item-name>span,
+.user_item-email>span,
+.user_item-id>span,
+.user_item-role>span,
+.user_item-phone>span,
+.user_item-password>span {
+    color: #0093D0;
+
+}
+.all_payments>
+.all_payments-wrapper>
+.profile_payment-item>
+.profile_payment-item-tours>
+.profile_payment-item-tour>
+.payment_item>
+.payment_item-info{
+    max-width:280px;
+}
+.all_payments{
+    gap: 30px;
+}
+.all_payments-wrapper,.all_feedback-wrapper {
+    margin-top: 30px;
+    max-height: 700px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 15px;
+
 }

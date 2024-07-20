@@ -69,11 +69,6 @@ export function Catalog() {
         e.target.value === 'Всё' ? resetSelect() : setSelectValue(e.target.value)
         console.log(selectValue)
     };
-
-    bdTours&& bdTours.map((tour,i)=>{
-        console.log(i)
-    })
-
     function sortTours(text) {
         let sortedTours = [...bdTours]
         if (text == 'релевантность') {
